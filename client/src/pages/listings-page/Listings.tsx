@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import { getListings } from "../../data/listingsdata";
 import { ListingType } from "../../types/types";
 import { useState, useEffect } from "react";
-// import axios from "axios";
 
 function Listings() {
   const [listings, setListings] = useState<ListingType[]>([]);

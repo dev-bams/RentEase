@@ -7,8 +7,9 @@ function ProfileIcon() {
   return (
     <div className="relative cursor-pointer">
       <div
-        onMouseEnter={() => setPopupVisible(true)}
-        onMouseLeave={() => setPopupVisible(false)}
+        onClick={() => {
+          setPopupVisible((isPopupVisible) => !isPopupVisible);
+        }}
       >
         <svg
           width="24px"
@@ -43,8 +44,9 @@ function ProfileIcon() {
       {isPopupVisible && (
         <div
           className="absolute -right-2 bg-white shadow-md pt-4 pb-4 flex flex-col w-40 items-center"
-          onMouseEnter={() => setPopupVisible(true)}
-          onMouseLeave={() => setPopupVisible(false)}
+          onClick={() => {
+            setPopupVisible((isPopupVisible) => !isPopupVisible);
+          }}
         >
           <Link
             to="/login"

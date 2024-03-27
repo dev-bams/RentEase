@@ -12,7 +12,7 @@ type LinkType = {
   link: string;
 };
 type ListingType = {
-  _id: number;
+  _id: string;
   mainListingImageSrc: string;
   otherImages: string[];
   listingLocation: string;

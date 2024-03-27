@@ -10,12 +10,12 @@ function TeamMemberCard({
   index,
 }: TeamMemberCardProps) {
   return index % 2 === 0 ? (
-    <div className="flex flex-wrap items-center justify-between min-h-lvh w-full h-full gap-6 max-lg:justify-center">
+    <div className="flex flex-wrap items-center justify-between h w-full h-full gap-6 max-lg:justify-center max-lg:flex-col">
       <TeamMemberImage memberImage={memberImage} memberGithub={memberGithub} />
       <TeamMemberInfo memberName={memberName} memberRole={memberRole} />
     </div>
   ) : (
-    <div className="flex flex-wrap-reverse items-center justify-between min-h-lvh w-full h-full gap-6 max-lg:justify-center">
+    <div className="flex flex-wrap-reverse items-center justify-between w-full h-full gap-6 max-lg:justify-center max-lg:flex-col-reverse">
       <TeamMemberInfo memberName={memberName} memberRole={memberRole} />
       <TeamMemberImage memberImage={memberImage} memberGithub={memberGithub} />
     </div>
