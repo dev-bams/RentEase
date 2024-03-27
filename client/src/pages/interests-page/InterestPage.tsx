@@ -62,7 +62,7 @@ function InterestPage() {
             <a
               className="bg-first-primary hover:bg-first-primary-light p-3 text-white font-bold rounded-md w-[300px] flex items-center justify-center"
               target="_blank"
-              href="http://localhost:3000/"
+              href="https://rentease-contract-generator.onrender.com/"
             >
               Generate contract
             </a>
