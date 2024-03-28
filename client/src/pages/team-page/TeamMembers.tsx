@@ -2,6 +2,7 @@ import { TeamMembersType } from "../../types/types";
 import TeamMemberCard from "./TeamMemberCard";
 import khaleedAvatar from "../../assets/images/khaleed-avatar.jpeg";
 import francescaAvatar from "../../assets/images/francesca-avatar.jpeg";
+import hebaAvatar from "../../assets/images/heba-avatar.png";
 
 function TeamMembers() {
   const teamMembers: TeamMembersType[] = [
@@ -20,7 +21,7 @@ function TeamMembers() {
     {
       memberName: "Heba Azeef",
       memberRole: "Designer",
-      memberImage: khaleedAvatar,
+      memberImage: hebaAvatar,
       memberGithub: "https://github.com/HebaAz",
     },
     {
